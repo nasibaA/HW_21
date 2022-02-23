@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flask Demo</title>
+</head>
+<body>
+<form action="{{ url_for('save') }}" method="post">
+<h1>Nobel Prize Database:</h1>
+<table>
+<tbody>
+<tr>
+<td>Year:</td>
+<td><input type="text" year="year" /></td>
+<td>Category:</td>
+<td><input type="text" category="category" /></td>
+</tr>
+<tr>
+<td>ID:</td>
+<td><input type="text" id="id" /></td>
+<td>First Name:</td>
+<td><input type="text" firstname="firstname" /></td>
+<td>Surname:</td>
+<td><input type="text" surname="surname" /></td>
+<td>Motivation:</td>
+<td><input type="text" motivation="motivation" /></td>
+</tr>
+</tbody>
+</table>
+<p><input type="submit" value="submit"/></p>
+</form>
+</body>
+</html>
